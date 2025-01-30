@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- No editor, crie um arquivo XML para transmissão de dados referentes a uma nota fiscal
+eletrônica.
+https://www.w3schools.com/xml/xml_validator.asp validar doc xml
+
+-->
+<NotaFiscal>
+    <Cabecalho>
+        <UF>SP</UF>
+        <DescricaoOperacao>Venda de produtos</DescricaoOperacao>
+        <NumeroSerie>001</NumeroSerie>
+        <NumeroNotaFiscal>12345</NumeroNotaFiscal>
+        <DataHoraEmissao>2024-01-30T10:00:00</DataHoraEmissao>
+    </Cabecalho>
+    <Emitente>
+        <CNPJ>12345678000195</CNPJ>
+        <Nome>Empresa XYZ Ltda</Nome>
+        <NomeFantasia>XYZ Comércio</NomeFantasia>
+        <InscricaoEstadual>987654321</InscricaoEstadual>
+    </Emitente>
+    <Destinatario>
+        <CNPJ>98765432100010</CNPJ>
+        <Nome>Cliente ABC</Nome>
+        <Email>clienteabc@email.com</Email>
+        <Endereco>
+            <Logradouro>Avenida Principal</Logradouro>
+            <Numero>456</Numero>
+            <Bairro>Jardins</Bairro>
+            <Municipio>Rio de Janeiro</Municipio>
+            <UF>RJ</UF>
+            <CEP>22020-020</CEP>
+            <Pais>Brasil</Pais>
+            <Telefone>+5521999999999</Telefone>
+        </Endereco>
+    </Destinatario>
+    <Itens>
+        <Item numero="1">
+            <Produto>Notebook</Produto>
+            <Quantidade>1</Quantidade>
+            <Valor>4500.00</Valor>
+        </Item>
+        <Item numero="2">
+            <Produto>Mouse sem fio</Produto>
+            <Quantidade>1</Quantidade>
+            <Valor>150.00</Valor>
+        </Item>
+    </Itens>
+    <Rodape>
+        <ValorTotal>4650.00</ValorTotal>
+        <ValorICMS>279.00</ValorICMS>
+    </Rodape>
+</NotaFiscal>
